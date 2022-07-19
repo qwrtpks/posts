@@ -1,0 +1,31 @@
+ NOTES
+ # this app using a database for posts
+ CREATE POSTS APP
+
+ # execute the migrate command to create an initial database based on Django's default settings.
+ (mb) $ python manage.py migrate
+
+ # create model and activate the model
+
+ (mb) $ python manage.py makemigrations posts
+ (mb) $ python manage.py migrate posts
+
+ # django admin creations
+
+ (mb) $ python manage.py createsuperuser
+ Username(leave blank to use 'wsv'):wsv
+ Email:
+ Password:
+ Password(again):
+ Superuser created successfully
+
+ # restart the django server with 
+ (mb) $ python manage.py runserver
+ # on your browser go to 
+ http://127.0.0.1:8000/admin/
+
+# edit the admin.py to get what we need on that admin privilege
+
+# create the test py and test database for alias default
+
+
